@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel=stylesheet type="text/css" href="css/admin1.css">
+    </link>
+    <title>Users</title>
+    <style>
+        .details {
+            flex-direction: row;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="heading">All Users</h1>
+    <div class="details">
+        <!-- <div class="box">
+                First Name
+                <p id="#"></p>
+                Middle Name
+                <p id="#"></p>
+                Last Name
+                <p id="#"></p>
+                <br>
+                Age
+                <p id="#"></p>
+                <br>
+                Keywords 
+                <p id="#"></p>
+                Level
+                <p id="#"></p>
+                <p style="text-align:right;"><a href="/admin2">more info--></a></p>
+    </div> -->
+    </div>
+    <button id="press">press</button>
+    <script>
+        const fn = (cur) => {
+            const con = `
+            <div class="box" style="width : 300px ; display : inline-block ; margin : 32px ; padding : 20px;">
+                <form action="/finduser1" method="POST">
+                First Name
+                <p id="#">${cur.fn}</p>
+                Middle Name
+                <p id="#">${cur.mn}</p>
+                Last Name
+                <p id="#">${cur.ln}</p>
+                <br>
+                Aadhar 
+                <p id="aadharno" name="aadharno" value="${cur._id}">${cur._id}</p>
+                <input type="text" style="width : 0px" placeholder="Enter Aadhaar Number" name="aadno" value="${cur._id}">                
+                Age
+                <p id="#">${cur.age}</p>
+                <br>
+                // Keywords 
+                // <p id="#"></p>
+                // Level
+                // <p id="#"></p>
+                <button type="submit">More info</button>
+                </form>
+                </div>
+            `;
+            document.querySelector('.details').insertAdjacentHTML('beforeend', con);
+        }
+
+
+        const getData = () => {
+            fetch('http://localhost:3000/getall')
+                .then(res => res.json())
+                .then(res => {
+                    console.log(res);
+                    res.forEach(cur => {
+                        fn(cur);
+                    })
+                })
+        }
+
+        document.getElementById('press').addEventListener('click', getData);
+    </script>
+</body>
+
+</html>

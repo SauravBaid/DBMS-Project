@@ -1,0 +1,25 @@
+body{
+    background-image: url(../img/page1blur.jpg);
+    background-attachment: fixed;
+}
+.box{
+    background-color: rgb(240, 248, 255,0.8);
+    width: 700px;
+    height: 100%;
+    padding: 10px;
+    margin: auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.number{
+	background: #1abc9c;
+	color: #fff;
+	height: 30px;
+	width: 30px;
+	display: inline-block;
+	font-size: 0.8em;
+	margin-right: 4px;
+	line-height: 30px;
+	text-align: center;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+	border-radius: 15px 15px 15px 0px;
+}

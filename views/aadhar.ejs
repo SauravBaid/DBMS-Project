@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> View Resume</title>
+<LINK rel=stylesheet type="text/css" href="css/aadhar.css"></LINK>
+<style>
+head{
+	text-align:center;
+}
+body{
+	text-align:center;
+}
+</style>
+</head>
+<body>
+	<div id="wrap">
+	<br>
+    <h2>Enter your Aadhaar Number to view your Resume</h2>
+    <div class="invalid">
+        <p><%= error %></p>
+    </div>
+<form action="/existinguser" method="POST">
+	<br>
+	<input type="text" placeholder="Enter Aadhaar Number" name="_id">
+    <br><br>
+	<button type="submit"><b>View</b></button>
+</div>
+</form>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<LINK rel=stylesheet type="text/css" href="css/form.css">
+</LINK>
+</head>
+<body>
+<div class="form-style-5">
+<form action="/newform" method="POST">
+<fieldset>
+<legend><span class="number">1</span>Personal Details</legend>
+First Name
+<input type="text" name="fn" value="<%=fn%>">
+Middle Name
+<input type="text" name="mn" value="<%=mn%>">
+Last Name
+<input type="text" name="ln" value="<%=ln%>">
+<br><br>
+Date of Birth
+<input type="date" name="dob" value="<%=dob%>">
+Age
+<input type="number" name="age" value="<%=age%>">
+<br><br>
+Aadhar Number
+<input type="number" name="_id" value="<%=_id%>">
+Gender
+<select name="sex" value="<%=sex%>">
+<option value="male">Male</option>
+<option value="female">Female</option>
+<option value="other">Other</option>
+</select>
+<br><br>
+Mobile Number
+<input type="text" name="phone" value="<%=phone%>">
+Email id
+<input type="email" name="email" value="<%=email%>">
+<br>
+Native Language
+<input type="text" name="nativelang" value="<%=nativelang%>">
+<br><br>
+<legend><span class="number">2</span>Address</legend>
+Address
+<input type="text" name="location" value="<%=location%>">
+<legend><span class="number">3</span>Profile</legend>
+Networks
+<input type="text" name="network" value="<%=network%>">
+Usernames
+<input type="text" name="username" value="<%=username%>">
+URLS
+<input type="text" name="url" value="<%=url%>">
+<br><br>
+<legend><span class="number">4</span>Education</legend>
+Degree <input type="text" name="degree" value="<%=degree%>">
+CGPA <input type="text" name="cgpa" value="<%=cgpa%>">
+Year of Graduation <input type="text" name="yog" value="<%=yog%>">
+<br><br>
+<legend><span class="number">5</span>Skills</legend>
+Name <input type="text" name="Name" value="<%=Name%>">
+Level <input type="text" name="Level" value="<%=Level%>">
+<br><br>
+Keywords <input type="text" name="Keywords" value="<%=Keywords%>">
+Achievement <input type="text" name="Achievement" value="<%=Achievement%>">
+<br><br>
+<legend><span class="number">6</span>Interests</legend>
+Name <input type="text" name="InterestName" value="<%=InterestName%>">
+Keywords <input type="text" name="InterestKeywords" value="<%=InterestKeywords%>">
+<br><br>
+<legend><span class="number">7</span>Work Experience</legend>
+Company <input type="text" name="company" value="<%=company%>">
+Position <input type="text" name="position" value="<%=position%>">
+Website <input type="text" name="website" value="<%=website%>">
+<br><br>
+<h2>References</h2>
+Name <input type="text" name="referenceName" value="<%=referenceName%>">
+Reference <input type="text" name="reference" value="<%=reference%>">
+<br><br>
+</fieldset>
+<input type="submit" name= "submitbutton" value="<%=submitbutton%>" />
+</form>
+</div>
+</body>
+</html>
